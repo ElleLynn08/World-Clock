@@ -133,7 +133,7 @@ function updateCity(event) {
   let cityTime = moment().tz(cityTimeZone);
   let cityElement = document.querySelector("#cities-container");
   cityElement.innerHTML = `
-   <div id="cities-container">
+    <div id="cities-container">
    <div class="cities">
       <div>
         <h2>${cityName}</h2>
@@ -144,6 +144,8 @@ function updateCity(event) {
          )}</div>
       </div>
       </div>
+      </div>
+      
      
       <a href="/">All Cities</a>
       `;
@@ -228,6 +230,92 @@ function alphaTheme() {
     </div>
 `;
 }
+function returnGMT() {
+  let citiesContainer = document.querySelector("#cities-container");
+  citiesContainer.innerHTML = `
+   <div id="cities-container">
+        <div class="cities" id="seattle">
+          <div>
+            <h2>Seattle 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="washington-dc">
+          <div>
+            <h2>Washington DC 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="london">
+          <div>
+            <h2>London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="paris">
+          <div>
+            <h2>Paris 🇫🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="moscow">
+          <div>
+            <h2>Moscow 🇷🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="baghdad">
+          <div>
+            <h2>Baghdad 🇫🇮</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="tehran">
+          <div>
+            <h2>Tehran 🇮🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="kabul">
+          <div>
+            <h2>Kabul 🇦🇫</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="beijing">
+          <div>
+            <h2>Beijing 🇨🇳</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="cities" id="tokyo">
+          <div>
+            <h2>Tokyo 🇯🇵</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>`;
+}
 
 updateTime();
 setInterval(updateTime, 1000);
@@ -237,3 +325,6 @@ citySelectElement.addEventListener("change", updateCity);
 
 let alphabeticalButton = document.querySelector(".alphabetical");
 alphabeticalButton.addEventListener("click", alphaTheme);
+
+let returnButton = document.querySelector(".return");
+returnButton.addEventListener("click", returnGMT);
