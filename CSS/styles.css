@@ -86,4 +86,13 @@ footer {
   .time {
     font-size: 26px;
   }
+  .alphabetical {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .return {
+    display: block;
+    margin: 0 auto;
+  }
 }
