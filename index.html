@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
-    <title>World CLock - Michelle FIndley</title>
+    <title>World Clock - Michelle Findley Front-end Developer</title>
+    <meta
+      name="description"
+      content="World clock with time of major cities around the world created by front-end developer Michelle Findley."
+    />
   </head>
   <body>
     <button class="alphabetical">Alphabetical</button>
     <button class="return">Return to GMT order</button>
     <div class="container">
       <h1>World Clock</h1>
-      <select id="city">
+      <select id="city" title="drop down of cities around the world">
         <option value="">Select a city. . .</option>
         <option value="current">My current location</option>
         <option value="Asia/Almaty">Almaty</option>
@@ -57,7 +61,11 @@
       </select>
 
       <div id="cities-container">
-        <div class="cities" id="seattle">
+        <div
+          class="cities"
+          id="seattle"
+          title="list of major cities in GMT order"
+        >
           <div>
             <h2>Seattle 🇺🇸</h2>
             <div class="date"></div>
@@ -140,7 +148,7 @@
     </div>
 
     <footer>
-      This project was coded with 💚 by <strong>Michelle Findley </strong>and is
+      This project was coded with 💚 by <strong>Míchelle Findley </strong>and is
       <a href="https://github.com/MFindley08/World-Clock" target="_blank"
         >open sourced on GitHub</a
       >
